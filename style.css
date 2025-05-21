@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background-color: #121212;
+    color: #ffffff;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: auto;
+    padding: 2rem 1rem;
+  }
+  
+  .intro {
+    text-align: center;
+    background-color: #1e1e1e;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .intro h1 {
+    color: #1DB954;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .intro p {
+    color: #ccc;
+    font-size: 1.1rem;
+  }
+  
+  /* Music Player */
+  .player {
+    background-color: #1e1e1e;
+    border-radius: 1rem;
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .player img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  .player h2 {
+    font-size: 1.5rem;
+    color: #1DB954;
+    margin-top: 1rem;
+  }
+  
+  .player p {
+    color: #ccc;
+    margin-bottom: 1rem;
+  }
+  
+  .player audio {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .player small {
+    display: block;
+    margin-top: 1rem;
+    color: #aaa;
+  }
+  
+  /* Gallery */
+  .gallery h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #1DB954;
+  }
+  
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .photo-grid img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2/3;
+    object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+  }
+  
+  .photo-grid img:hover {
+    transform: scale(1.03);
+  }
+  
+  
+  .video-wrapper {
+    text-align: center;
+  }
+  
+  .video-wrapper h3 {
+    color: #1DB954;
+    margin-bottom: 1rem;
+  }
+  
+  .video-wrapper video {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 1rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: #999;
+    padding-bottom: 2rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .intro h1 {
+      font-size: 1.6rem;
+    }
+  
+    .intro p,
+    .player p {
+      font-size: 1rem;
+    }
+  
+    .player h2 {
+      font-size: 1.3rem;
+    }
+
+    /* Video Responsif */
+  .video-wrapper video {
+    width: 100%;
+    max-width: 600px; /* Batas maksimum untuk desktop */
+    height: auto; /* Menjaga rasio aspek */
+    aspect-ratio: 9 / 16; /* Rasio 1080x1920 */
+    border-radius: 1rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    object-fit: contain; /* Menyesuaikan isi video */
+  }
+
+  /* Responsive untuk layar kecil */
+  @media (max-width: 600px) {
+    .video-wrapper video {
+        max-width: 100%; /* Gunakan lebar penuh pada layar kecil */
+    }
+  }
+
+  /* animasi partikel */
+}
